@@ -1,0 +1,23 @@
+.container {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  background-color: black;
+}
+h2 {
+  margin: auto;
+  font-size: bold;
+  color: white;
+}
+p {
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  font-family: calibri;
+  color: white;
+}

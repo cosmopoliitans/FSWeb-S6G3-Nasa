@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import BaslikBolumu from "./bileşenler/BaslikBolumu/BaslikBolumu.js";
+import Fotograflar from "./bileşenler/Fotograflar/Fotograflar.js";
+import Date from "./bileşenler/Date/Date.js";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        NASA uygulamasını yapmak için README.md dosyasıdaki talimatları takip edin
-		İyi eğlenceler! <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <BaslikBolumu />
+      <Fotograflar />
+      <Date />
     </div>
   );
 }
