@@ -13,12 +13,12 @@ const BaslikBolumu = (props) => {
         </div>
         <div className="aciklama">
           <p>
-            NASA'nın Goddard Uzay Uçuş Merkezi'nce, her gün astronomiyle ilgili
-            yeni bir fotoğrafın ve bilimsel açıklamasının yayımlandığı popüler
-            bir internet sitesi bulunmaktadır. Bu sitede 16 Haziran 1995'ten
-            beri 3600’den fazla görüntü yayımlandı ve giderek daha çok dilde
-            yayımlanan internet aynaları ile astronomi meraklarına sunulmaya
-            devam ediyor.
+            There is a popular website published by NASA's Goddard Space Flight
+            Center that features a new astronomy-related photograph and
+            scientific explanation every day. Since June 16, 1995, over 3600
+            images have been published on this site and are continuing to be
+            made available to astronomy enthusiasts through internet mirrors
+            that are published in an increasing number of languages.
           </p>
         </div>
       </div>
