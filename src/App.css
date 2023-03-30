@@ -24,12 +24,47 @@
   z-index: -1;
 }
 .cerceve {
-  margin: 200px 50px 200px 50px;
+  margin: 200px 70px 200px 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: aliceblue;
+}
+.date {
+  padding-left: 20px;
+  border-radius: 5px;
   display: flex;
+  align-items: center;
+  color: rgb(21, 22, 22);
+  gap: 20px;
+  text-align: left;
+}
+.govde {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sag-textler {
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
 }
 
+.icerik-yazi {
+  text-align: left;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+h1 {
+  font-family: Coda Caption ExtraBold;
+  font-family: "Chelsea Market", cursive;
+  font-family: "Coda Caption", sans-serif;
+  font-family: "Lexend Tera", sans-serif;
+  font-family: "Righteous", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -27,7 +27,7 @@ export default function BiComponent(props) {
           </div>
           <div className="govde">
             {data.media_type === "image" && (
-              <img src={data.hdurl} alt={data.title} width="500" />
+              <img src={data.hdurl} alt={data.title} width="700" height="500" />
             )}
             {data.media_type === "video" && (
               <iframe width="520" height="400" src={data.url}></iframe>
