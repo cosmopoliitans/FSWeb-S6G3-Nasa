@@ -7,6 +7,29 @@
   pointer-events: none;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  backdrop-filter: opacity(0.5);
+  z-index: -1;
+}
+.cerceve {
+  margin: 200px 50px 200px 50px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

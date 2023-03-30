@@ -10,20 +10,37 @@ export default function BiComponent(props) {
   return (
     <div>
       <div className="container">
-        <p>{data.date}</p>
-        <label htmlFor="apodDate">apodDate: </label>
-        <input
-          onChange={(e) => dateChangeHandler(e)}
-          type="date"
-          value={currentDate}
-          name="apodDate"
-        ></input>
-        <p>{data.explanation}</p>
-        <p>{data.title}</p>
-        <img src={data.hdurl} alt={data.title} width="500" />
-        <p>{data.media_type}</p>
-        <p>{data.service_version}</p>
-        <p>{data.hdurl}</p>
+        <div
+          className="background"
+          style={{ backgroundImage: `url(${data.hdurl})` }}
+        ></div>
+        <div className="cerceve">
+          <div className="date">
+            <p>{data.date}</p>
+            <label htmlFor="apodDate">apodDate: </label>
+            <input
+              onChange={(e) => dateChangeHandler(e)}
+              type="date"
+              value={currentDate}
+              name="apodDate"
+            ></input>
+          </div>
+          <div className="govde">
+            {data.media_type === "image" && (
+              <img src={data.hdurl} alt={data.title} width="500" />
+            )}
+            {data.media_type === "video" && (
+              <iframe width="520" height="400" src={data.url}></iframe>
+            )}
+            <div className="sag-textler">
+              <h1>{data.title}</h1>
+              <div className="icerik-yazi">
+                <h4>{data.copyright}</h4>
+                <p>{data.explanation}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
